@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Культурный код сейчас — блогеры, музыканты, инфлюенсеры · Культурный код РБ</title>
+  <meta name="description" content="Современная Беларусь: блогеры, тиктокеры, музыканты, спортсмены и арт-сцена. Bento-сетка с фильтрами по категориям, предпросмотром видео и модальным плеером.">
+  <meta name="theme-color" content="#12100e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312100e'/%3E%3Cpath d='M16 6l10 10-10 10L6 16z' fill='%23c93a2b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      .preloader { display: none !important; }
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      .hero__title .line > span { transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__title"><i>◆</i>Культурный код сейчас</div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="header" data-style="light">
+    <div class="header__inner">
+      <a class="header__brand" href="index.html">
+        <span class="brand-die">◆</span> Нити времени <small>РБ</small>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link" href="index.html">Главная</a>
+        <a class="header__link" href="history.html">История</a>
+        <a class="header__link is-active" href="now.html" aria-current="page">Сейчас</a>
+        <a class="header__link" href="index.html#about">О проекте</a>
+        <a class="header__cta" href="index.html#contribute">Внести вклад</a>
+      </nav>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Мобильная навигация">
+      <a class="menu__link" href="index.html"><i>01</i>Главная</a>
+      <a class="menu__link" href="history.html"><i>02</i>История</a>
+      <a class="menu__link" href="now.html"><i>03</i>Сейчас</a>
+      <a class="menu__link" href="index.html#about"><i>04</i>О проекте</a>
+      <a class="menu__link" href="index.html#threads"><i>05</i>Семь нитей</a>
+      <a class="menu__link" href="index.html#contribute"><i>06</i>Вклад</a>
+    </nav>
+    <div class="menu__foot">
+      <span>Культурный код РБ</span>
+      <span>Минск · Беларусь</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1600&amp;q=70&amp;fit=crop" alt="" aria-hidden="true">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="page-hero__crumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a><span class="sep">/</span><span>Культурный код сейчас</span>
+        </nav>
+        <h1>Страна, которую <em>смотрят прямо сейчас</em></h1>
+        <p class="page-hero__lead">Музыканты, блогеры, спортсмены и целые сцены, которые формируют образ Беларуси в ленте. Наведите на карточку, чтобы увидеть предпросмотр, и нажмите — чтобы открыть видео.</p>
+        <div class="page-hero__meta">
+          <span class="tag">16 карточек</span>
+          <span class="tag">6 категорий</span>
+          <span class="tag">видео в модалке</span>
+          <span class="tag">редакция 2026</span>
+        </div>
+        <a class="page-hero__scroll" href="#now-bento">Листайте ленту <span class="bounce">↓</span></a>
+      </div>
+    </section>
+
+    <!-- TOOLBAR -->
+    <div class="now-toolbar" id="now-bento">
+      <div class="container now-toolbar__inner">
+        <div class="filters" role="group" aria-label="Фильтр по категориям">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все <sup>16</sup></button>
+          <button class="filter" type="button" data-filter="music" aria-pressed="false">Музыка <sup>5</sup></button>
+          <button class="filter" type="button" data-filter="bloggers" aria-pressed="false">Блогеры <sup>3</sup></button>
+          <button class="filter" type="button" data-filter="tiktok" aria-pressed="false">TikTok <sup>2</sup></button>
+          <button class="filter" type="button" data-filter="sport" aria-pressed="false">Спорт <sup>2</sup></button>
+          <button class="filter" type="button" data-filter="art" aria-pressed="false">Арт <sup>2</sup></button>
+          <button class="filter" type="button" data-filter="it" aria-pressed="false">IT <sup>2</sup></button>
+        </div>
+        <div class="now-counter">Показано <b class="js-visible-count">16</b> из 16</div>
+      </div>
+    </div>
+
+    <!-- BENTO -->
+    <section class="section section--tight" style="padding-top:clamp(1.4rem,3vw,2.2rem);" aria-label="Карточки героев и сцен">
+      <div class="container">
+        <div class="bento" id="bento">
+
+          <!-- 01 · WARGAMING -->
+          <article class="bento__item" role="button" tabindex="0" data-category="it" data-span="7" data-size="wide"
+            data-video="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
+            data-cat-label="IT · Геймдев"
+            data-desc="Студия, основанная в Минске в 1998 году. Мировой успех World of Tanks (2010) показал: из Минска можно сделать продукт для десятков миллионов игроков — и это стало частью культурного экспорта."
+            data-fact="Основана в Минске в 1998 · World of Tanks — 2010"
+            aria-label="Wargaming — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&amp;q=70&amp;fit=crop" alt="Экран с кодом и интерфейсом — IT-сцена Беларуси" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">WG</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">IT</span><span class="bento__follow">геймдев · Минск</span></span>
+              <h3>Wargaming <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Минская студия, чья игра стала мировым хитом: инженерная школа выходит на глобальный рынок.</p>
+            </span>
+          </article>
+
+          <!-- 02 · ВЛАД БУМАГА -->
+          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="5" data-size="tall"
+            data-video="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+            data-cat-label="Блогеры · YouTube"
+            data-desc="Владислав Бумага, известный как Влад А4, — самый популярный белорусский видеоблогер: челленджи, эксперименты и форматы, которые собрали десятки миллионов подписчиков и сделали его одним из самых известных видеоблогеров СНГ."
+            data-fact="Один из самых популярных видеоблогеров СНГ"
+            aria-label="Влад Бумага — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=900&amp;q=70&amp;fit=crop" alt="Камера и студийный свет — съёмка видео" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">ВБ</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">YouTube · Витебск</span></span>
+              <h3>Влад Бумага <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Главный YouTube-экспорт страны: челленджи и форматы, которые знают миллионы.</p>
+            </span>
+          </article>
+
+          <!-- 03 · МОЛЧАТ ДОМА -->
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
+            data-video="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
+            data-cat-label="Музыка · Пост-панк"
+            data-desc="Минское трио холодного пост-панка. Песня «Судно (Борис Рижий)» стала вирусной в TikTok в 2020 году, а альбомы вышли на культовом лейбле Sacred Bones — редкий случай, когда андеграунд из Минска становится мировым трендом."
+            data-fact="«Судно» — вирусный хит TikTok 2020"
+            aria-label="Молчат Дома — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&amp;q=70&amp;fit=crop" alt="Певец в свете софитов — пост-панк-концерт" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">МД</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">пост-панк · Минск</span></span>
+              <h3>Молчат Дома <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Холодный пост-панк, который стал вирусным звуком планеты.</p>
+            </span>
+          </article>
+
+          <!-- 04 · АРИНА СОБОЛЕНКО -->
+          <article class="bento__item" role="button" tabindex="0" data-category="sport" data-span="5" data-size="tall"
+            data-video="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+            data-cat-label="Спорт · Теннис"
+            data-desc="Арина Соболенко — первая ракетка мира и многократная победительница турниров Большого шлема. Её матчи — лучший пример того, как спорт становится частью национального культурного кода."
+            data-fact="Первая ракетка мира · титулы Большого шлема"
+            aria-label="Арина Соболенко — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=900&amp;q=70&amp;fit=crop" alt="Теннисный корт — спорт высоких достижений" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">АС</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">теннис · Минск</span></span>
+              <h3>Арина Соболенко <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Первая ракетка мира: белорусская школа спорта, которая умеет превращать давление в игру.</p>
+            </span>
+          </article>
+
+          <!-- 05 · МАКС КОРЖ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="3"
+            data-video="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
+            data-cat-label="Музыка · Поп"
+            data-desc="Макс Корж превратил стадионы в главные площадки страны. Его концерты — не просто шоу, а массовый опыт, где белорусская мелодика встречается с современным стадионным попом."
+            data-fact="Стадионные туры и главные хиты последнего десятилетия"
+            aria-label="Макс Корж — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&amp;q=70&amp;fit=crop" alt="Толпа на концерте — стадионный поп" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">МК</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп · Минск</span></span>
+              <h3>Макс Корж <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Стадионные гимны нового поколения: песня как общий опыт.</p>
+            </span>
+          </article>
+
+          <!-- 06 · ЛАЙФСТАЙЛ-ВЛОГИ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="4"
+            data-video="https://videos.pexels.com/video-files/3205624/3205624-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/3205624/3205624-hd_1920_1080_25fps.mp4"
+            data-cat-label="Блогеры · Сцена"
+            data-desc="Формат честных влогов о повседневности: учёба, работа, город, путешествия. Белорусская молодёжь снимает себя без пафоса — и это один из самых живых жанров новой культуры."
+            data-fact="Жанр, а не имя: сцена важнее списка"
+            aria-label="Лайфстайл-влоги — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&amp;q=70&amp;fit=crop" alt="Дорога и пейзаж — путешествие во влоге" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">сцена · Минск</span></span>
+              <h3>Лайфстайл-влоги <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Честные влоги о повседневности: личный дневник как живой формат культуры.</p>
+            </span>
+          </article>
+
+          <!-- 07 · TIKTOK-СКЕТЧИ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="tiktok" data-span="4"
+            data-video="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
+            data-cat-label="TikTok · Комедия"
+            data-desc="Короткие скетчи, которые рождаются в вертикальном формате: один телефон, одна идея и монтаж на ходу. Белорусский юмор всё чаще живёт именно здесь — и расходится по стране за часы."
+            data-fact="Вертикальный формат 9:16"
+            aria-label="TikTok-скетчи — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&amp;q=70&amp;fit=crop" alt="Смартфон с вертикальным видео — TikTok-формат" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">TikTok</span><span class="bento__follow">сцена · комедия</span></span>
+              <h3>TikTok-скетчи <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Один телефон, одна идея: юмор, который живёт в формате 9:16.</p>
+            </span>
+          </article>
+
+          <!-- 08 · IOWA -->
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
+            data-video="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
+            data-cat-label="Музыка · Поп-рок"
+            data-desc="IOWA — проект Екатерины Иванчиковой, которая родом из Могилёва. От локальных клубов до больших фестивалей: один из самых узнаваемых голосов белорусской сцены последних пятнадцати лет."
+            data-fact="Могилёв → большие фестивальные сцены"
+            aria-label="IOWA — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?w=900&amp;q=70&amp;fit=crop" alt="Певица с микрофоном на сцене" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">IOWA</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп-рок · Могилёв →</span></span>
+              <h3>IOWA <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Могилёвский старт и большие сцены: голос, который узнают по первым строкам.</p>
+            </span>
+          </article>
+
+          <!-- 09 · ЛЯВОН ВОЛЬСКИЙ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="5"
+            data-video="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
+            data-cat-label="Музыка · Рок"
+            data-desc="Лявон Вольский — фронтмен N.R.M. и одна из главных фигур белорусского рока. «Тры чарапахі» и «Маё пакаленьне» знают наизусть несколько поколений — редкий случай песни, ставшей общим языком."
+            data-fact="Фронтмен N.R.M."
+            aria-label="Лявон Вольский — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900&amp;q=70&amp;fit=crop" alt="Сцена и свет — рок-концерт" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">ЛВ</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">рок · Минск</span></span>
+              <h3>Лявон Вольский <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Голос N.R.M.: песни, которые стали общим языком нескольких поколений.</p>
+            </span>
+          </article>
+
+          <!-- 10 · ПОДКАСТЫ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="3"
+            data-video="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
+            data-cat-label="Блогеры · Сцена"
+            data-desc="Разговорный жанр, который возвращает голосу доверие: интервью, истории и дискуссии о культуре. Подкасты — тихая, но важная часть современной белорусской медиасцены."
+            data-fact="Голос, тишина, разговор"
+            aria-label="Подкасты — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&amp;q=70&amp;fit=crop" alt="Пульт и микрофон — студия звука" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">сцена · аудио</span></span>
+              <h3>Подкасты <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Интервью и дискуссии о культуре: жанр, где важнее всего голос.</p>
+            </span>
+          </article>
+
+          <!-- 11 · ДАРЬЯ ДОМРАЧЕВА -->
+          <article class="bento__item" role="button" tabindex="0" data-category="sport" data-span="4"
+            data-video="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
+            data-cat-label="Спорт · Биатлон"
+            data-desc="Дарья Домрачева — четырёхкратная олимпийская чемпионка по биатлону. Один из самых сильных спортивных брендов Беларуси и пример дисциплины как культурной черты."
+            data-fact="4 олимпийских золота"
+            aria-label="Дарья Домрачева — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900&amp;q=70&amp;fit=crop" alt="Спортивный зал — тренировка" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">ДД</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">биатлон · Минск</span></span>
+              <h3>Дарья Домрачева <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Четыре олимпийских золота: дисциплина как отдельная культурная ценность.</p>
+            </span>
+          </article>
+
+          <!-- 12 · ТИМА БЕЛОРУССКИХ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
+            data-video="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+            data-cat-label="Музыка · Инди-поп"
+            data-desc="Тима Белорусских — герой новой волны белорусского инди-попа: «Мокрый асфальт» и «Незабудка» сделали городскую романтику главным жанром молодёжи — а имя стало частью самого понятия «белорусское»."
+            data-fact="Новая волна белорусского инди-попа"
+            aria-label="Тима Белорусских — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=900&amp;q=70&amp;fit=crop" alt="Микрофон и сцена — инди-поп" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">ТБ</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">инди-поп · Минск</span></span>
+              <h3>Тима Белорусских <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Городская романтика новой волны: жанр, в котором название страны стало брендом.</p>
+            </span>
+          </article>
+
+          <!-- 13 · ИЛЛЮСТРАЦИЯ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="art" data-span="4"
+            data-video="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
+            data-cat-label="Арт · Сцена"
+            data-desc="Белорусская иллюстрация переживает подъём: цифровой арт, плакаты, зины и книжная графика. Новое поколение художников говорит о городе и памяти современным визуальным языком."
+            data-fact="Цифровой арт · плакат · зины"
+            aria-label="Иллюстрация новой волны — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=900&amp;q=70&amp;fit=crop" alt="Художник за работой — иллюстрация" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">сцена · иллюстрация</span></span>
+              <h3>Иллюстрация новой волны <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Плакаты, зины и книжная графика: визуальный язык нового поколения.</p>
+            </span>
+          </article>
+
+          <!-- 14 · ГАЛЕРЕИ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="art" data-span="4"
+            data-video="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
+            data-cat-label="Арт · Сцена"
+            data-desc="Небольшие пространства и инициативы, где показывают современное искусство: перформанс, инсталляция, фотография. Именно здесь культура проверяет себя на смелость."
+            data-fact="Перформанс · инсталляция · фотография"
+            aria-label="Независимые галереи — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=900&amp;q=70&amp;fit=crop" alt="Пространство галереи — современное искусство" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">сцена · галереи</span></span>
+              <h3>Независимые галереи <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Места, где современное искусство проверяет себя на смелость.</p>
+            </span>
+          </article>
+
+          <!-- 15 · ТАНЦЕВАЛЬНЫЙ TIKTOK -->
+          <article class="bento__item" role="button" tabindex="0" data-category="tiktok" data-span="5"
+            data-video="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
+            data-cat-label="TikTok · Танец"
+            data-desc="Танцевальные челленджи — новый фольклор: движения расходятся по стране за часы, а городские площадки и квартиры становятся сценой. Формат, в котором культура снова становится коллективной."
+            data-fact="Хореография как общий язык"
+            aria-label="Танцевальный TikTok — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&amp;q=70&amp;fit=crop" alt="Свет и толпа — движение и танец" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">◆</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">TikTok</span><span class="bento__follow">сцена · танец</span></span>
+              <h3>Танцевальный TikTok <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Движения расходятся за часы: танец как новый фольклор.</p>
+            </span>
+          </article>
+
+          <!-- 16 · ПВТ -->
+          <article class="bento__item" role="button" tabindex="0" data-category="it" data-span="7" data-size="wide"
+            data-video="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
+            data-preview="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
+            data-cat-label="IT · Экосистема"
+            data-desc="Парк высоких технологий, основанный в 2005 году: особый правовой режим и центр IT-экосистемы, из которой вышли десятки продуктовых команд и студий."
+            data-fact="Основан в 2005 году"
+            aria-label="Парк высоких технологий — открыть видео">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&amp;q=70&amp;fit=crop" alt="Код на экране — экосистема разработки" loading="lazy"></span>
+            <span class="bento__initials" aria-hidden="true">ПВТ</span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">IT</span><span class="bento__follow">экосистема · Минск</span></span>
+              <h3>Парк высоких технологий <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Особый правовой режим и центр экосистемы, из которой выросли десятки команд.</p>
+            </span>
+          </article>
+        </div>
+
+        <div class="bento-empty">В этой категории пока никого нет — но нить только пишется. Загляните позже или предложите героя сами.</div>
+
+        <div class="now-note">
+          <span>▣ Наведите на карточку — <b>предпросмотр видео</b></span>
+          <span>▣ Клик или Enter — <b>ролик в модальном окне</b></span>
+          <span>▣ Категорий: <b>6</b> · карточек: <b>16</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Почему это культурный код</span>
+            <h2 data-reveal>Не тренды, <span class="serif-em">а продолжение традиции</span></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Вышивальщица повторяла ряд за рядом — блогер повторяет формат за форматом. Стадионный хор, семейный узор, строчка кода — всё это одна привычка: <strong>делать точно и делиться</strong>.</p>
+        </div>
+        <div class="future-grid stagger">
+          <article class="future-card" style="background:var(--night-2);border-color:rgba(243,236,221,.16);color:var(--cream);">
+            <div class="future-card__icon" style="border-color:rgba(243,236,221,.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+            </div>
+            <span class="future-card__kicker">Слово</span>
+            <h4>Короткая форма</h4>
+            <p style="color:rgba(243,236,221,.7);">Вертикальное видео — это новый «узор в ряд»: маленький повторяемый мотив, в котором всё должно быть точно.</p>
+          </article>
+          <article class="future-card" style="background:var(--night-2);border-color:rgba(243,236,221,.16);color:var(--cream);">
+            <div class="future-card__icon" style="border-color:rgba(243,236,221,.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.6-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.4-9 9-9 9z"/></svg>
+            </div>
+            <span class="future-card__kicker">Сцена</span>
+            <h4>Общий опыт</h4>
+            <p style="color:rgba(243,236,221,.7);">Стадионный хор — та же общинная культура, только вместо деревенской околицы — арена на десятки тысяч.</p>
+          </article>
+          <article class="future-card" style="background:var(--night-2);border-color:rgba(243,236,221,.16);color:var(--cream);">
+            <div class="future-card__icon" style="border-color:rgba(243,236,221,.3);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg>
+            </div>
+            <span class="future-card__kicker">Код</span>
+            <h4>Ремесло в цифре</h4>
+            <p style="color:rgba(243,236,221,.7);">Дизайн и разработка — продолжение ремесленной точности: сделать аккуратно и так, чтобы держалось.</p>
+          </article>
+        </div>
+
+        <div class="next-cta" style="border-top-color:rgba(243,236,221,.14);margin-top:clamp(2.4rem,5vw,4rem);">
+          <h3 style="color:var(--cream);">Хотите, чтобы герой появился здесь? <em>Расскажите нам</em></h3>
+          <a class="btn btn--ghost" href="mailto:hello@culture-code.by">Предложить героя <span class="btn__arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__scrim" data-close></div>
+    <div class="modal__dialog">
+      <div class="modal__video">
+        <video controls playsinline preload="none" aria-label="Видео героя"></video>
+        <div class="video-fallback">Видеофрагмент скоро появится</div>
+        <div class="modal__nav">
+          <button class="modal__arrow" type="button" data-prev aria-label="Предыдущая карточка">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="modal__arrow" type="button" data-next aria-label="Следующая карточка">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal__info">
+        <span class="modal__cat js-modal-cat"></span>
+        <h3 class="modal__title" id="modalTitle"><span class="js-modal-title"></span></h3>
+        <p class="modal__desc js-modal-desc"></p>
+        <div class="modal__fact">
+          <span>Коротко о главном</span>
+          <b class="js-modal-fact"></b>
+        </div>
+      </div>
+      <button class="modal__close" type="button" data-close aria-label="Закрыть модальное окно">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__ornament" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div>
+          <h2 class="footer__title">Код пишется <em>прямо сейчас.</em></h2>
+          <p style="color:rgba(243,236,221,.6);max-width:40ch;">Культурный код РБ — медиапроект о культуре Беларуси на стыке истории и современности.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Разделы</h4>
+            <a href="index.html">Главная</a>
+            <a href="history.html">История РБ</a>
+            <a href="now.html">Культурный код сейчас</a>
+            <a href="index.html#about">О проекте</a>
+          </div>
+          <div class="footer__col">
+            <h4>Сейчас</h4>
+            <a href="now.html?cat=music">Музыка</a>
+            <a href="now.html?cat=bloggers">Блогеры</a>
+            <a href="now.html?cat=tiktok">TikTok</a>
+            <a href="now.html?cat=sport">Спорт</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <span>◆ Культурный код РБ · © <span class="js-year">2026</span></span>
+        <span>Минск · Беларусь</span>
+        <button type="button" class="footer__to-top js-to-top">Наверх ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" aria-label="Наверх">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>История РБ — таймлайн тысячи лет · Культурный код РБ</title>
+  <meta name="description" content="Интерактивный хронологический таймлайн истории Беларуси: Полоцкое княжество, ВКЛ, Скорина, Статут 1588, XX век, независимость и новая цифровая эпоха.">
+  <meta name="theme-color" content="#12100e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312100e'/%3E%3Cpath d='M16 6l10 10-10 10L6 16z' fill='%23c93a2b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__title"><i>◆</i>История РБ</div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="header" data-style="light">
+    <div class="header__inner">
+      <a class="header__brand" href="index.html">
+        <span class="brand-die">◆</span> Нити времени <small>РБ</small>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link" href="index.html">Главная</a>
+        <a class="header__link is-active" href="history.html" aria-current="page">История</a>
+        <a class="header__link" href="now.html">Сейчас</a>
+        <a class="header__link" href="index.html#about">О проекте</a>
+        <a class="header__cta" href="index.html#contribute">Внести вклад</a>
+      </nav>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Мобильная навигация">
+      <a class="menu__link" href="index.html"><i>01</i>Главная</a>
+      <a class="menu__link" href="history.html"><i>02</i>История</a>
+      <a class="menu__link" href="now.html"><i>03</i>Сейчас</a>
+      <a class="menu__link" href="index.html#about"><i>04</i>О проекте</a>
+      <a class="menu__link" href="index.html#threads"><i>05</i>Семь нитей</a>
+      <a class="menu__link" href="index.html#contribute"><i>06</i>Вклад</a>
+    </nav>
+    <div class="menu__foot">
+      <span>Культурный код РБ</span>
+      <span>Минск · Беларусь</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__bg">
+        <img src="assets/eras/era-1517.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="page-hero__crumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a><span class="sep">/</span><span>История РБ</span>
+        </nav>
+        <h1>Тысяча лет, <em>сплетённых в одну нить</em></h1>
+        <p class="page-hero__lead">Не список дат, а линия, по которой читается культурный код: от вечевого Полоцка и печатного слова Скорины — к Статуту, XX веку и цифровой новой волне.</p>
+        <div class="page-hero__meta">
+          <span class="tag">8 эпох</span>
+          <span class="tag">ключевые события</span>
+          <span class="tag">артефакты</span>
+          <span class="tag">скролл-ревил</span>
+        </div>
+        <a class="page-hero__scroll" href="#timeline">Листайте хронологию <span class="bounce">↓</span></a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="tl-intro container">
+      <div>
+        <span class="eyebrow">Как читать таймлайн</span>
+        <h2 style="margin-top:.6rem;">История — не архив. <span class="serif-em">Это работающий код</span></h2>
+      </div>
+      <p class="tl-intro__aside">Каждая эпоха слева отмечает себя на рейке времени, а справа раскрывает одно ключевое событие и набор артефактов — то, что <em>передалось дальше</em>. Нажимайте на чипы эпох, чтобы прыгнуть к нужному веку, или просто листайте: блоки появляются по мере прокрутки.</p>
+    </section>
+
+    <!-- ERA NAV -->
+    <div class="container" style="padding-bottom:1.6rem;">
+      <nav class="era-nav" aria-label="Эпохи">
+        <a class="era-nav__item" href="#era-862"><b>IX в.</b><span>Полоцк</span></a>
+        <a class="era-nav__item" href="#era-1101"><b>X–XIII</b><span>Княжество</span></a>
+        <a class="era-nav__item" href="#era-1517"><b>1517</b><span>Скорина</span></a>
+        <a class="era-nav__item" href="#era-1588"><b>1588</b><span>Статут</span></a>
+        <a class="era-nav__item" href="#era-20"><b>XX в.</b><span>Слово и образ</span></a>
+        <a class="era-nav__item" href="#era-1945"><b>1941–45</b><span>Память</span></a>
+        <a class="era-nav__item" href="#era-1991"><b>1991</b><span>Независимость</span></a>
+        <a class="era-nav__item" href="#era-2005"><b>2005→</b><span>Код</span></a>
+      </nav>
+    </div>
+
+    <!-- TIMELINE -->
+    <section class="container" id="timeline" style="padding-bottom:clamp(2rem,5vw,4rem);">
+      <div class="timeline">
+        <div class="timeline__rail" aria-hidden="true"><div class="timeline__progress"></div></div>
+
+        <!-- 862 -->
+        <article class="era" id="era-862" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">862 <small>Первое письменное упоминание</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Полоцк: город, который <em>читает и торгует</em></h2>
+            <p class="era__text">Полоцк впервые упомянут в «Повести временных лет» под 862 годом — древнейшая дата в белорусской истории. Через него идут пути «из варяг в греки»: сюда приходят книги, вести и товары, а вместе с ними — привычка записывать и сохранять.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Первое упоминание Полоцка в летописи</h4>
+              <p>Город выходит на историческую сцену как центр ремесла и торговли на Западной Двине.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">«Повесть временных лет»</span>
+              <span class="tag">Путь «из варяг в греки»</span>
+              <span class="tag">Вечевой порядок</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-862.svg" alt="Эпоха Полоцка: концентрические круги и ромб" loading="lazy">
+              <figcaption><b>862</b> — точка отсчёта. Полоцк как первый центр книжности и торговли на белорусских землях.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- POLOTSK PRINCIPALITY -->
+        <article class="era" id="era-1101" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">X–XIII вв. <small>Полоцкое княжество</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Княжество, где <em>вече спорит с князем</em></h2>
+            <p class="era__text">Полоцкая земля живёт по собственным правилам: вече решает, князь правит по договору, а город строит храмы и школы. Именно здесь появляются Софийский собор и мастера, известные далеко за пределами княжества.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Евфросиния Полоцкая и Софийский собор</h4>
+              <p>Софийский собор в Полоцке (сер. XI в.) и просветительская деятельность Евфросинии Полоцкой делают город одним из первых центров книжности и образования.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">Софийский собор</span>
+              <span class="tag">Крест Лазаря Богши</span>
+              <span class="tag">Жития и поучения</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-polotsk.svg" alt="Метафора Полоцкого княжества: башни и ромбы" loading="lazy">
+              <figcaption><b>XI в.</b> — Софийский собор в Полоцке: каменная книга своего времени.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 1517 -->
+        <article class="era" id="era-1517" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">1517 <small>Прага</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Скорина печатает <em>первую книгу</em></h2>
+            <p class="era__text">Франциск Скорина, родом из Полоцка, издаёт в Праге Псалтырь — первую печатную книгу для восточных славян. Это не просто технология: книгу можно тиражировать, а значит — учить по ней многих, а не одного.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Псалтырь Скорины, 6 августа 1517 года</h4>
+              <p>Начало книгопечатания для восточных славян. Скорина печатает на языке, близком народу, с предисловиями и комментариями.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">Псалтырь 1517</span>
+              <span class="tag">«Малая подорожная книжка»</span>
+              <span class="tag">Первая типография</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-1517.svg" alt="Печатный лист и год 1517" loading="lazy">
+              <figcaption><b>1517</b> — Псалтырь Скорины: печатное слово входит в культурный код.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 1588 -->
+        <article class="era" id="era-1588" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">1588 <small>Статут ВКЛ</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Статут: закон <em>на своём языке</em></h2>
+            <p class="era__text">Третий Статут Великого княжества Литовского написан на старобелорусском языке и действует более двух столетий. Один из главных правовых памятников Европы: здесь закон — письменный и общий для всех.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Третий Статут ВКЛ, 1588</h4>
+              <p>Свод законов, написанный на старобелорусском, — свидетельство развитой правовой культуры и высокого статуса языка.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">Старобелорусский язык</span>
+              <span class="tag">Магдебургское право</span>
+              <span class="tag">Суд и кодекс</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-1588.svg" alt="Страница Статута: столбцы текста и знак §" loading="lazy">
+              <figcaption><b>1588</b> — Статут ВКЛ: закон как форма защиты и достоинства.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- XX -->
+        <article class="era" id="era-20" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">XX в. <small>Слово и образ</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Купала, Колас, Шагал: <em>мир узнаёт</em></h2>
+            <p class="era__text">Начало века — время, когда белорусское слово оформляется как литература мирового уровня, а Витебск становится художественной мастерской. Здесь рождается то, что мы сегодня назвали бы «национальным брендом».</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Янка Купала, Якуб Колас и Марк Шагал</h4>
+              <p>Поэты возвращают язык в литературу, художник — образ города. Витебск даёт миру Шагала, а вместе с ним — привычку мечтать вслух.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">«Спадчына» Купалы</span>
+              <span class="tag">Витебское художественное училище</span>
+              <span class="tag">Шагал и витебский авангард</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-20.svg" alt="Солнце над горизонтом — XX век" loading="lazy">
+              <figcaption><b>XX в.</b> — от «Спадчыны» до витебского авангарда: слово и образ как экспорт.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 1941-45 -->
+        <article class="era" id="era-1945" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">1941–1945 <small>Память</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Война, которая <em>изменила всё</em></h2>
+            <p class="era__text">Великая Отечественная война стала самой тяжёлой страницей истории XX века для Беларуси: страна потеряла огромную часть населения, были разрушены города и сёла. Память о войне — не только музей, но и часть повседневного культурного кода.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>Победа 1945 года</h4>
+              <p>Хатынь, Брестская крепость, мемориалы и книги — способы помнить. Уважение к памяти и человеческому достоинству остаётся этическим фундаментом культуры.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">Хатынь</span>
+              <span class="tag">Брестская крепость</span>
+              <span class="tag">Книги о войне</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-1945.svg" alt="Память о Великой Отечественной войне" loading="lazy">
+              <figcaption><b>1941–1945</b> — память как этическая основа: помнить — значит продолжать жить.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 1991 -->
+        <article class="era" id="era-1991" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">1991 <small>Независимость</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Новая точка отсчёта <em>для языка и искусства</em></h2>
+            <p class="era__text">После 1991 года страна получает возможность заново говорить о себе на своих условиях. Появляется новое поколение режиссёров, художников, музыкантов — и привычка задавать вопросы о собственной идентичности.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>1991: независимость</h4>
+              <p>Начинается новое время для белорусского языка, театра и кино. Культурный код становится вопросом, который интересно обсуждать публично.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">Новый белорусский театр</span>
+              <span class="tag">Документальное кино</span>
+              <span class="tag">Фестивальное движение</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-1991.svg" alt="Ромбовая звезда — символ 1991 года" loading="lazy">
+              <figcaption><b>1991</b> — вопрос о себя-собственности: язык, театр, кино, публичная память.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 2005 -->
+        <article class="era" id="era-2005" data-reveal>
+          <div class="era__sticky">
+            <div class="era__years">2005 → <small>Цифровая эпоха</small></div>
+          </div>
+          <div class="era__body">
+            <h2 class="era__title">Код как <em>новая вышивка</em></h2>
+            <p class="era__text">Открывается Парк высоких технологий, минские компании и студии выходят на мировой рынок, в стране появляется современная городская культура. Культурный код теперь переплётен с цифровым — и это тоже традиция: точность, аккуратность, доведение до конца.</p>
+            <div class="era__event">
+              <span class="era__event-kicker">Ключевое событие</span>
+              <h4>ПВТ и новая волна IT-культуры</h4>
+              <p>Минск становится центром инженерной и творческой экосистемы. IT и современная культура — уже часть того, что Беларусь экспортирует миру.</p>
+            </div>
+            <div class="era__artifacts">
+              <span class="tag">ПВТ</span>
+              <span class="tag">World of Tanks</span>
+              <span class="tag">MSQRD</span>
+              <span class="tag">Стриминги и соцсети</span>
+            </div>
+            <figure class="era__figure">
+              <img src="assets/eras/era-2005.svg" alt="Точки-пиксели и график 2005 года" loading="lazy">
+              <figcaption><b>2005 →</b> — цифровая эпоха: точки-пиксели складываются в новый узор.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+
+      <!-- ARTIFACT CALLOUT -->
+      <div class="artifact-callout" data-reveal="scale">
+        <div>
+          <div class="artifact-callout__kicker">Артефакт → сегодня</div>
+          <h3>Одна форма — <em>много технологий</em></h3>
+          <p>Вышивка требует терпения; программа — дисциплины. Между ними тысяча лет, но логика одна: повторяй точно, проверяй каждый ряд и доводи дело до конца. Этот ритм и есть культурный код, который мы сегодня узнаём в коде цифровом.</p>
+        </div>
+        <div class="artifact-callout__stats">
+          <div class="artifact-callout__stat"><b>1000+</b><span>лет культурной памяти</span></div>
+          <div class="artifact-callout__stat"><b>8</b><span>эпох в таймлайне</span></div>
+          <div class="artifact-callout__stat"><b>1517</b><span>год первой печатной книги</span></div>
+          <div class="artifact-callout__stat"><b>1</b><span>нить, которая не обрывается</span></div>
+        </div>
+      </div>
+
+      <!-- NEXT -->
+      <div class="next-cta" data-reveal>
+        <h3>История не заканчивается. <em>Она продолжается в людях</em></h3>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap;">
+          <a class="btn btn--ink" href="now.html">Культурный код сейчас <span class="btn__arrow">→</span></a>
+          <a class="btn btn--ghost-ink" href="index.html#people">Вернуться на главную</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__ornament" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div>
+          <h2 class="footer__title">История — это <em>работающий код.</em></h2>
+          <p style="color:rgba(243,236,221,.6);max-width:40ch;">Культурный код РБ — медиапроект о культуре Беларуси на стыке истории и современности.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Разделы</h4>
+            <a href="index.html">Главная</a>
+            <a href="history.html">История РБ</a>
+            <a href="now.html">Культурный код сейчас</a>
+            <a href="index.html#about">О проекте</a>
+          </div>
+          <div class="footer__col">
+            <h4>Эпохи</h4>
+            <a href="#era-862">862 · Полоцк</a>
+            <a href="#era-1517">1517 · Скорина</a>
+            <a href="#era-1588">1588 · Статут</a>
+            <a href="#era-2005">2005 → · Код</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <span>◆ Культурный код РБ · © <span class="js-year">2026</span></span>
+        <span>Минск · Беларусь</span>
+        <button type="button" class="footer__to-top js-to-top">Наверх ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" aria-label="Наверх">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Культурный код РБ — тысячелетний узор, по которому страна пишет будущее</title>
+  <meta name="description" content="Мультимедийный портал о культуре Беларуси на стыке истории и современности: тысяча лет в одну нить, красота, люди, орнамент, IT и культурный код сегодня.">
+  <meta name="theme-color" content="#12100e">
+  <meta property="og:title" content="Культурный код РБ">
+  <meta property="og:description" content="Тысячелетний узор, по которому страна пишет своё будущее.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312100e'/%3E%3Cpath d='M16 6l10 10-10 10L6 16z' fill='%23c93a2b'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__title"><i>◆</i>Культурный код РБ</div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- HEADER -->
+  <header class="header" data-style="solid">
+    <div class="header__inner">
+      <a class="header__brand" href="index.html">
+        <span class="brand-die">◆</span> Нити времени <small>РБ</small>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link is-active" href="index.html" aria-current="page">Главная</a>
+        <a class="header__link" href="history.html">История</a>
+        <a class="header__link" href="now.html">Сейчас</a>
+        <a class="header__link" href="#about">О проекте</a>
+        <a class="header__cta" href="#contribute">Внести вклад</a>
+      </nav>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Мобильная навигация">
+      <a class="menu__link" href="index.html"><i>01</i>Главная</a>
+      <a class="menu__link" href="history.html"><i>02</i>История</a>
+      <a class="menu__link" href="now.html"><i>03</i>Сейчас</a>
+      <a class="menu__link" href="#about"><i>04</i>О проекте</a>
+      <a class="menu__link" href="#threads"><i>05</i>Семь нитей</a>
+      <a class="menu__link" href="#contribute"><i>06</i>Вклад</a>
+    </nav>
+    <div class="menu__foot">
+      <span>Культурный код РБ</span>
+      <span>Минск · Беларусь</span>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__media" data-parallax>
+        <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="https://videos.pexels.com/video-files/3129671/3129671-hd_1280_720_30fps.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__topline">
+          <span class="dot-live" aria-hidden="true"></span>
+          <span>Беларусь · культурный код</span>
+          <span class="sep">/</span>
+          <span>X–XXI век</span>
+          <span class="sep">/</span>
+          <span>Проект 2026</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line" style="--line-delay:.05s"><span>Культурный</span></span>
+          <span class="line" style="--line-delay:.14s"><span>код</span></span>
+          <span class="line" style="--line-delay:.23s"><span><em>Беларуси</em></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lead">Тысячелетний узор, по которому страна пишет своё будущее. От полоцких фресок до минского кода — история, люди и культура, собранные в одну нить.</p>
+          <div class="hero__actions">
+            <a class="btn btn--red" href="history.html">
+              История РБ <span class="btn__arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" href="now.html">
+              Культурный код сейчас <span class="btn__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="hero__video-toggle" type="button" aria-pressed="true">
+        <span class="ic js-video-icon">
+          <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><rect x="1.5" y="1" width="3" height="10" rx="1"/><rect x="7.5" y="1" width="3" height="10" rx="1"/></svg>
+        </span>
+        <span class="js-video-label">Пауза</span>
+      </button>
+
+      <a class="hero__scroll" href="#threads" aria-label="Смотреть дальше">Смотреть дальше</a>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__item">1517 · Псалтырь Скорины</span>
+        <span class="ticker__item">1588 · Статут ВКЛ</span>
+        <span class="ticker__item">4 объекта ЮНЕСКО</span>
+        <span class="ticker__item">2015 · Нобелевская премия</span>
+        <span class="ticker__item">≈ 11 000 озёр</span>
+        <span class="ticker__item">2010 · World of Tanks</span>
+        <span class="ticker__item">≈ 40 % территории — леса</span>
+        <span class="ticker__item">◆</span>
+        <span class="ticker__item">1517 · Псалтырь Скорины</span>
+        <span class="ticker__item">1588 · Статут ВКЛ</span>
+        <span class="ticker__item">4 объекта ЮНЕСКО</span>
+        <span class="ticker__item">2015 · Нобелевская премия</span>
+        <span class="ticker__item">≈ 11 000 озёр</span>
+        <span class="ticker__item">2010 · World of Tanks</span>
+        <span class="ticker__item">≈ 40 % территории — леса</span>
+        <span class="ticker__item">◆</span>
+      </div>
+    </div>
+
+    <!-- SEVEN THREADS -->
+    <section class="section" id="threads">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Оглавление</span>
+            <h2 data-reveal>Семь нитей</h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Каждый раздел — отдельная нить: <strong>история</strong>, которая всё ещё работает; <strong>сейчас</strong>, которое пишется на наших экранах; и будущее, которое собирается из обоих.</p>
+        </div>
+
+        <div class="threads stagger">
+          <a class="thread" href="history.html">
+            <span class="thread__num">01 <span class="thread__arrow">→</span></span>
+            <span class="thread__badge">Новый раздел</span>
+            <span class="thread__body">
+              <h3>История</h3>
+              <p>Тысяча лет, сплетённых в одну нить. Таймлайн эпох, событий и артефактов.</p>
+            </span>
+          </a>
+
+          <a class="thread" href="now.html">
+            <span class="thread__num">02 <span class="thread__arrow">→</span></span>
+            <span class="thread__badge">Новый раздел</span>
+            <span class="thread__body">
+              <h3>Культурный код сейчас</h3>
+              <p>Блогеры, тиктокеры, музыканты и инфлюенсеры, которые задают тон сегодня.</p>
+            </span>
+          </a>
+
+          <a class="thread" href="#beauty">
+            <span class="thread__num">03 <span class="thread__arrow">→</span></span>
+            <span class="thread__body">
+              <h3>Красота</h3>
+              <p>Леса, озёра и замки, которые пора открыть заново.</p>
+            </span>
+          </a>
+
+          <a class="thread" href="#people">
+            <span class="thread__num">04 <span class="thread__arrow">→</span></span>
+            <span class="thread__body">
+              <h3>Люди</h3>
+              <p>Имена, которые знает весь мир.</p>
+            </span>
+          </a>
+
+          <a class="thread" href="#ornament">
+            <span class="thread__num">05 <span class="thread__arrow">→</span></span>
+            <span class="thread__body">
+              <h3>Орнамент</h3>
+              <p>Узор, который устроен как алгоритм.</p>
+            </span>
+          </a>
+
+          <a class="thread" href="#it">
+            <span class="thread__num">06 <span class="thread__arrow">→</span></span>
+            <span class="thread__body">
+              <h3>IT</h3>
+              <p>Код, написанный в Минске.</p>
+            </span>
+          </a>
+
+          <a class="thread thread--full" href="#future">
+            <span class="thread__num">07 <span class="thread__arrow">→</span></span>
+            <span class="thread__body">
+              <h3>Будущее</h3>
+              <p>Три направления, куда тянутся нити.</p>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--line" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__sticky" data-reveal="left">
+            <span class="eyebrow">О проекте</span>
+            <p class="about__lead">Культурный код — <em>исходник страны</em>. Книги, ремёсла, законы и песни, которые передают из поколения в поколение и которые незаметно решают, как мы работаем, строим и мечтаем. Этот проект — о том, как старая нить становится основой нового.</p>
+          </div>
+          <div class="about__cards stagger">
+            <article class="about-card">
+              <span class="about-card__step">01 / Прошлое</span>
+              <h4>Передано <small>Прошлое</small></h4>
+              <p>Книги, ремёсла, законы и обычаи: код, который веками передавали из рук в руки.</p>
+            </article>
+            <article class="about-card">
+              <span class="about-card__step">02 / Настоящее</span>
+              <h4>Работает сейчас <small>Настоящее</small></h4>
+              <p>Трудолюбие, точность и привычка учиться. На этом держится сильная инженерная школа.</p>
+            </article>
+            <article class="about-card">
+              <span class="about-card__step">03 / Будущее</span>
+              <h4>Создаём <small>Будущее</small></h4>
+              <p>Технологии со своим почерком: аккуратные, надёжные и по-человечески тёплые.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY PREVIEW -->
+    <section class="section section--dark" id="history">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>История</span>
+            <h2 data-reveal>Тысяча лет, сплетённых <span class="serif-em">в одну нить</span></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Четыре поворота, которые сегодня читаются как код всей культуры. Полный интерактивный таймлайн — <strong>на отдельной странице</strong>.</p>
+        </div>
+
+        <div class="moments stagger">
+          <article class="moment">
+            <div class="moment__year">XII в.</div>
+            <div class="moment__place">Полоцк</div>
+            <p>Евфросиния Полоцкая и Софийский собор делают город одним из первых центров книжности и просвещения.</p>
+          </article>
+          <article class="moment">
+            <div class="moment__year">1517</div>
+            <div class="moment__place">Прага</div>
+            <p>Франциск Скорина печатает Псалтырь. Так начинается книгопечатание для восточных славян.</p>
+          </article>
+          <article class="moment">
+            <div class="moment__year">1588</div>
+            <div class="moment__place">Статут</div>
+            <p>Свод законов Великого княжества Литовского написан на старобелорусском — одно из главных правовых достижений эпохи.</p>
+          </article>
+          <article class="moment">
+            <div class="moment__year">XX в.</div>
+            <div class="moment__place">Новое слово</div>
+            <p>Купала, Колас и Шагал показывают миру белорусское слово и образ.</p>
+          </article>
+        </div>
+
+        <div class="next-cta" style="border-top:1px solid rgba(243,236,221,.14);margin-top:2.4rem;">
+          <a class="link-more" href="history.html">Открыть всю хронологию <span class="btn__arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTINUE IN NEXT CHUNK -->
+
+    <!-- PREVIEW: NEW SECTIONS -->
+    <section class="section" id="sections">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Два новых раздела</span>
+            <h2 data-reveal>Нить не обрывается <span class="serif-em">в настоящем</span></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Мы расширили проект: теперь у сайта есть <strong>полноценная хронология</strong> и живая лента современной культуры — с видео, фильтрами и людьми, которые прямо сейчас формируют код страны.</p>
+        </div>
+
+        <div class="preview stagger">
+          <a class="preview-card" href="history.html">
+            <span class="preview-card__new">Новый раздел</span>
+            <div class="preview-card__media">
+              <img src="https://images.unsplash.com/photo-1461360228754-6e81c478b882?w=1200&amp;q=75&amp;fit=crop" alt="Старинная архитектура — метафора исторического наследия" loading="lazy">
+            </div>
+            <div class="preview-card__content">
+              <span class="preview-card__kicker">История РБ · 7 эпох</span>
+              <h3>Тысяча лет <em>в одну нить</em></h3>
+              <p>Интерактивный таймлайн: от первых поселений и Полоцкого княжества — через Статут и Псалтырь — к XX веку и дню сегодняшнему. Каждая эпоха — с ключевым событием и артефактом.</p>
+              <div class="preview-card__foot">
+                <span class="preview-card__count">Таймлайн · артефакты · скролл</span>
+                <span class="preview-card__go">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a class="preview-card" href="now.html">
+            <span class="preview-card__new">Новый раздел</span>
+            <div class="preview-card__media">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&amp;q=75&amp;fit=crop" alt="Свет сцены — метафора современной культуры" loading="lazy">
+            </div>
+            <div class="preview-card__content">
+              <span class="preview-card__kicker">Культурный код сейчас · 16 карточек</span>
+              <h3>Страна, которую <em>смотрят</em></h3>
+              <p>Блогеры, тиктокеры, музыканты и инфлюенсеры. Bento-сетка с предпросмотром, фильтры по категориям и короткие видео в модальном окне.</p>
+              <div class="preview-card__foot">
+                <span class="preview-card__count">Bento · фильтры · видео</span>
+                <span class="preview-card__go">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEAUTY -->
+    <section class="section section--line" id="beauty">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Красота</span>
+            <h2 data-reveal>Красота, которую <span class="serif-em">пора открыть заново</span></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Страна, где можно выключить шум: чащи, тихие озёра и замки, помнящие век за веком.</p>
+        </div>
+
+        <div class="beauty-grid">
+          <figure class="beauty-media" data-reveal="scale">
+            <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&amp;q=75&amp;fit=crop" alt="Лес в утреннем свете — леса занимают около 40 % территории Беларуси" loading="lazy">
+            <figcaption class="beauty-media__caption">
+              <span>Беловежская пуща · одна из старейших охраняемых территорий Европы</span>
+              <span>◆</span>
+            </figcaption>
+          </figure>
+
+          <div class="beauty-stats" data-reveal="right">
+            <div class="stat">
+              <div class="stat__num" data-count="4">4</div>
+              <div class="stat__label"><strong>объекта ЮНЕСКО:</strong> Мирский и Несвижский замки, Беловежская пуща и дуга Струве</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="11000" data-count-prefix="≈ ">≈ 11 000</div>
+              <div class="stat__label"><strong>озёр,</strong> самое большое из них — Нарочь</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="40" data-count-suffix=" %">≈ 40 %</div>
+              <div class="stat__label"><strong>территории страны</strong> занимают леса</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">зубр</div>
+              <div class="stat__label"><strong>символ Беловежской пущи</strong> и крупнейшее наземное животное Европы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEOPLE -->
+    <section class="section" id="people">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Люди</span>
+            <h2 data-reveal>Люди, чьи нити <span class="serif-em">видны всему миру</span></h2>
+          </div>
+        </div>
+
+        <div class="people stagger">
+          <article class="person">
+            <div class="person__portrait">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&amp;q=70&amp;fit=crop" alt="Стопка старинных книг — метафора книгопечатания" loading="lazy">
+            </div>
+            <span class="person__role">Первопечатник</span>
+            <h4>Франциск Скорина</h4>
+            <p>Родом из Полоцка. Издавал книги на языке, близком народу, и открыл дорогу печатному слову.</p>
+          </article>
+          <article class="person">
+            <div class="person__portrait">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&amp;q=70&amp;fit=crop" alt="Художник за работой — метафора витебской школы" loading="lazy">
+            </div>
+            <span class="person__role">Художник</span>
+            <h4>Марк Шагал</h4>
+            <p>Родом из Витебска. Мечтательные образы родного города узнают во всём мире.</p>
+          </article>
+          <article class="person">
+            <div class="person__portrait">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&amp;q=70&amp;fit=crop" alt="Рукопись и перо — метафора литературы" loading="lazy">
+            </div>
+            <span class="person__role">Писатель</span>
+            <h4>Светлана Алексиевич</h4>
+            <p>Лауреат Нобелевской премии по литературе 2015 года. Книги о людях и памяти переведены на десятки языков.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORNAMENT -->
+    <section class="section section--dark" id="ornament">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Орнамент</span>
+            <h2 data-reveal>Орнамент — <span class="serif-em">это алгоритм</span></h2>
+          </div>
+        </div>
+
+        <div class="ornament-wrap">
+          <div class="ornament-figure" data-reveal="scale" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="orn-rot">
+                <rect x="60" y="60" width="280" height="280" stroke="#8a6a34" stroke-opacity=".55" transform="rotate(45 200 200)"/>
+                <rect x="110" y="110" width="180" height="180" stroke="#c93a2b" stroke-opacity=".8" transform="rotate(45 200 200)"/>
+                <rect x="160" y="160" width="80" height="80" stroke="#b68a3e" transform="rotate(45 200 200)"/>
+              </g>
+              <g stroke="#b68a3e" stroke-opacity=".7">
+                <path d="M200 8v30M200 362v30M8 200h30M362 200h30"/>
+                <path d="M63 63l20 20M337 63l-20 20M63 337l20-20M337 337l-20-20"/>
+              </g>
+              <path d="M200 120 L280 200 L200 280 L120 200 Z" stroke="#c93a2b" stroke-width="1.5"/>
+              <path d="M200 155 L245 200 L200 245 L155 200 Z" fill="#c93a2b" fill-opacity=".9"/>
+              <circle cx="200" cy="200" r="7" fill="#f3ecdd"/>
+              <path d="M200 40v30M200 330v30M40 200h30M330 200h30" stroke="#f3ecdd" stroke-opacity=".5"/>
+            </svg>
+          </div>
+
+          <dl class="ornament-list stagger" data-reveal>
+            <div class="ornament-item">
+              <dt>повтор → цикл</dt>
+              <dd>Узор вышивают рядами, а код строят циклами: одна идея, повторённая точно и красиво.</dd>
+            </div>
+            <div class="ornament-item">
+              <dt>мотив → функция</dt>
+              <dd>Ромб — готовый модуль. Его можно вышить где угодно и собрать из него что угодно.</dd>
+            </div>
+            <div class="ornament-item">
+              <dt>симметрия → архитектура</dt>
+              <dd>Строгий порядок узора похож на продуманную структуру проекта: сразу видно, где что лежит.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- IT -->
+    <section class="section section--dark" id="it" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>IT сегодня</span>
+            <h2 data-reveal>Код, написанный <span class="serif-em">в Минске</span></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Инженерная школа как продолжение ремесленной: точность, терпение и доведение до конца.</p>
+        </div>
+
+        <div class="it-rail stagger">
+          <article class="it-node" data-reveal>
+            <div class="it-node__year">1998 <small>Минск</small></div>
+            <h4>Wargaming</h4>
+            <p>Студия основана в Минске. World of Tanks вышла в 2010 году и стала мировым хитом.</p>
+          </article>
+          <article class="it-node" data-reveal data-reveal-delay="0.08s">
+            <div class="it-node__year">2005 <small>Минск</small></div>
+            <h4>ПВТ</h4>
+            <p>Парк высоких технологий: особый правовой режим для IT-компаний и центр экосистемы.</p>
+          </article>
+          <article class="it-node" data-reveal data-reveal-delay="0.16s">
+            <div class="it-node__year">2016 <small>Минск</small></div>
+            <h4>MSQRD</h4>
+            <p>Мобильное приложение команды из Минска, которое приобрела компания Facebook.</p>
+          </article>
+        </div>
+
+        <p class="it-quote" data-reveal>«Терпение вышивальщицы и дисциплина программиста <strong>растут из одного корня</strong>».</p>
+      </div>
+    </section>
+
+    <!-- FUTURE -->
+    <section class="section" id="future">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Светлое будущее</span>
+            <h2 data-reveal>Прошлое — наш <span class="serif-em">исходник</span>, будущее — наш <span class="serif-em">коммит</span></h2>
+          </div>
+        </div>
+
+        <div class="future-grid stagger">
+          <article class="future-card">
+            <div class="future-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3L2 8l10 5 10-5-10-5zM2 16l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="future-card__kicker">Таланты</span>
+            <h4>Образование</h4>
+            <p>Сильная школа математики и инженерии, которую растят новые поколения.</p>
+          </article>
+          <article class="future-card">
+            <div class="future-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-5.5 8-12a8 8 0 10-16 0c0 6.5 8 12 8 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </div>
+            <span class="future-card__kicker">Природа</span>
+            <h4>Экотуризм</h4>
+            <p>Тихий отдых среди лесов и озёр: «медленные» путешествия, к которым возвращается мир.</p>
+          </article>
+          <article class="future-card">
+            <div class="future-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg>
+            </div>
+            <span class="future-card__kicker">Код</span>
+            <h4>Технологии</h4>
+            <p>Продукты со своим почерком: аккуратность, надёжность, человечность.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTE -->
+    <section class="section contribute" id="contribute">
+      <div class="container contribute__inner">
+        <div data-reveal="left">
+          <span class="eyebrow" style="color:var(--white);">Ваш вклад</span>
+          <h2 style="margin-top:.7rem;">Внесите свой вклад <em>в наше будущее</em></h2>
+          <p style="max-width:44ch;margin-top:1.2rem;color:rgba(251,248,241,.82);">Нить не держится сама. Её плетут вместе: историями, идеями и теми, кто пришёл посмотреть.</p>
+          <div class="contribute__actions">
+            <a class="btn btn--ink" href="mailto:hello@culture-code.by">Написать нам <span class="btn__arrow">→</span></a>
+            <a class="btn btn--ghost" href="now.html">Смотреть «Сейчас»</a>
+          </div>
+        </div>
+        <div class="contribute__steps stagger">
+          <div class="contribute__step">
+            <i>01</i>
+            <div><h4>Расскажите</h4><p>Поделитесь историей, фотографией или семейным узором — всем, что стоит сохранить.</p></div>
+          </div>
+          <div class="contribute__step">
+            <i>02</i>
+            <div><h4>Создайте</h4><p>Сделайте проект, дизайн или код, в которых слышен культурный код Беларуси.</p></div>
+          </div>
+          <div class="contribute__step">
+            <i>03</i>
+            <div><h4>Откройте</h4><p>Приезжайте, исследуйте и расскажите друзьям, что вы нашли.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__ornament" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div>
+          <h2 class="footer__title">Нить не держится сама. <em>Её плетут вместе.</em></h2>
+          <p style="color:rgba(243,236,221,.6);max-width:40ch;">Культурный код РБ — медиапроект о культуре Беларуси на стыке истории и современности.</p>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Разделы</h4>
+            <a href="index.html">Главная</a>
+            <a href="history.html">История РБ</a>
+            <a href="now.html">Культурный код сейчас</a>
+            <a href="#about">О проекте</a>
+          </div>
+          <div class="footer__col">
+            <h4>Ещё</h4>
+            <a href="#beauty">Красота</a>
+            <a href="#ornament">Орнамент</a>
+            <a href="#it">IT сегодня</a>
+            <a href="#contribute">Внести вклад</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__meta">
+        <span>◆ Культурный код РБ · © <span class="js-year">2026</span></span>
+        <span>Минск · Беларусь</span>
+        <button type="button" class="footer__to-top js-to-top">Наверх ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" aria-label="Наверх">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
