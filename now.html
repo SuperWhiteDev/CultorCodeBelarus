@@ -76,12 +76,12 @@
           <a href="index.html">Главная</a><span class="sep">/</span><span>Культурный код сейчас</span>
         </nav>
         <h1>Страна, которую <em>смотрят прямо сейчас</em></h1>
-        <p class="page-hero__lead">Музыканты, блогеры, спортсмены и целые сцены, которые формируют образ Беларуси в ленте. Наведите на карточку, чтобы увидеть предпросмотр, и нажмите — чтобы открыть видео.</p>
+        <p class="page-hero__lead">Музыканты, спортсмены, писатели, учёные и создатели — реальные люди с настоящими фотографиями и ссылками на источники. Нажмите на карточку, чтобы открыть портрет, факты и видео, если оно есть.</p>
         <div class="page-hero__meta">
-          <span class="tag">16 карточек</span>
-          <span class="tag">6 категорий</span>
+          <span class="tag">30 карточек</span>
+          <span class="tag">7 категорий</span>
           <span class="tag">видео в модалке</span>
-          <span class="tag">редакция 2026</span>
+          <span class="tag">только реальные люди</span>
         </div>
         <a class="page-hero__scroll" href="#now-bento">Листайте ленту <span class="bounce">↓</span></a>
       </div>
@@ -91,15 +91,16 @@
     <div class="now-toolbar" id="now-bento">
       <div class="container now-toolbar__inner">
         <div class="filters" role="group" aria-label="Фильтр по категориям">
-          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все <sup>16</sup></button>
-          <button class="filter" type="button" data-filter="music" aria-pressed="false">Музыка <sup>5</sup></button>
-          <button class="filter" type="button" data-filter="bloggers" aria-pressed="false">Блогеры <sup>3</sup></button>
-          <button class="filter" type="button" data-filter="tiktok" aria-pressed="false">TikTok <sup>2</sup></button>
-          <button class="filter" type="button" data-filter="sport" aria-pressed="false">Спорт <sup>2</sup></button>
-          <button class="filter" type="button" data-filter="art" aria-pressed="false">Арт <sup>2</sup></button>
-          <button class="filter" type="button" data-filter="it" aria-pressed="false">IT <sup>2</sup></button>
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все <sup>30</sup></button>
+            <button class="filter" type="button" data-filter="music" aria-pressed="false">Музыка <sup>8</sup></button>
+            <button class="filter" type="button" data-filter="sport" aria-pressed="false">Спорт <sup>5</sup></button>
+            <button class="filter" type="button" data-filter="literature" aria-pressed="false">Литература <sup>3</sup></button>
+            <button class="filter" type="button" data-filter="art" aria-pressed="false">Арт <sup>4</sup></button>
+            <button class="filter" type="button" data-filter="science" aria-pressed="false">Наука <sup>2</sup></button>
+            <button class="filter" type="button" data-filter="places" aria-pressed="false">Места <sup>6</sup></button>
+            <button class="filter" type="button" data-filter="creators" aria-pressed="false">IT и креаторы <sup>2</sup></button>
         </div>
-        <div class="now-counter">Показано <b class="js-visible-count">16</b> из 16</div>
+        <div class="now-counter">Показано <b class="js-visible-count">30</b> из 30</div>
       </div>
     </div>
 
@@ -108,67 +109,29 @@
       <div class="container">
         <div class="bento" id="bento">
 
-          <!-- 01 · WARGAMING -->
-          <article class="bento__item" role="button" tabindex="0" data-category="it" data-span="7" data-size="wide"
-            data-video="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
-            data-cat-label="IT · Геймдев"
-            data-desc="Студия, основанная в Минске в 1998 году. Мировой успех World of Tanks (2010) показал: из Минска можно сделать продукт для десятков миллионов игроков — и это стало частью культурного экспорта."
-            data-fact="Основана в Минске в 1998 · World of Tanks — 2010"
-            aria-label="Wargaming — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&amp;q=70&amp;fit=crop" alt="Экран с кодом и интерфейсом — IT-сцена Беларуси" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">WG</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">IT</span><span class="bento__follow">геймдев · Минск</span></span>
-              <h3>Wargaming <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Минская студия, чья игра стала мировым хитом: инженерная школа выходит на глобальный рынок.</p>
-            </span>
-          </article>
-
-          <!-- 02 · ВЛАД БУМАГА -->
-          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="5" data-size="tall"
-            data-video="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
-            data-cat-label="Блогеры · YouTube"
-            data-desc="Владислав Бумага, известный как Влад А4, — самый популярный белорусский видеоблогер: челленджи, эксперименты и форматы, которые собрали десятки миллионов подписчиков и сделали его одним из самых известных видеоблогеров СНГ."
-            data-fact="Один из самых популярных видеоблогеров СНГ"
-            aria-label="Влад Бумага — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=900&amp;q=70&amp;fit=crop" alt="Камера и студийный свет — съёмка видео" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">ВБ</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">YouTube · Витебск</span></span>
-              <h3>Влад Бумага <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Главный YouTube-экспорт страны: челленджи и форматы, которые знают миллионы.</p>
-            </span>
-          </article>
-
-          <!-- 03 · МОЛЧАТ ДОМА -->
-          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
-            data-video="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
+          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="7" data-size="wide" data-youtube="s1ATTIQrmIQ"
+            data-name="Молчат Дома" data-photo="assets/people/molchat.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Молчат_дома"
             data-cat-label="Музыка · Пост-панк"
-            data-desc="Минское трио холодного пост-панка. Песня «Судно (Борис Рижий)» стала вирусной в TikTok в 2020 году, а альбомы вышли на культовом лейбле Sacred Bones — редкий случай, когда андеграунд из Минска становится мировым трендом."
-            data-fact="«Судно» — вирусный хит TikTok 2020"
-            aria-label="Молчат Дома — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&amp;q=70&amp;fit=crop" alt="Певец в свете софитов — пост-панк-концерт" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">МД</span>
+            data-sub="пост-панк · Минск" data-fact="«Судно» — десятки миллионов прослушиваний"
+            data-desc="Минское трио холодного пост-панка: Егор Шкутко, Роман Комогорцев и Павел Козлов. Песня «Судно (Борис Рыжий)» стала вирусной в TikTok в 2020 году, альбомы вышли на культовом лейбле Sacred Bones — редкий случай, когда андеграунд из Минска становится мировым трендом."
+            aria-label="Молчат Дома — подробнее">
+            <span class="bento__media"><img src="assets/people/molchat.jpg" alt="Молчат Дома" loading="lazy" decoding="async"></span>
             <span class="bento__content">
               <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">пост-панк · Минск</span></span>
               <h3>Молчат Дома <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Холодный пост-панк, который стал вирусным звуком планеты.</p>
+              <p>Пост-панк из Минска, который стал мировым звуком: «Судно» и Sacred Bones.</p>
             </span>
           </article>
 
-          <!-- 04 · АРИНА СОБОЛЕНКО -->
           <article class="bento__item" role="button" tabindex="0" data-category="sport" data-span="5" data-size="tall"
-            data-video="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+            data-name="Арина Соболенко" data-photo="assets/people/sabalenka.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Соболенко,_Арина_Сергеевна"
             data-cat-label="Спорт · Теннис"
-            data-desc="Арина Соболенко — первая ракетка мира и многократная победительница турниров Большого шлема. Её матчи — лучший пример того, как спорт становится частью национального культурного кода."
-            data-fact="Первая ракетка мира · титулы Большого шлема"
-            aria-label="Арина Соболенко — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=900&amp;q=70&amp;fit=crop" alt="Теннисный корт — спорт высоких достижений" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">АС</span>
+            data-sub="теннис · Минск" data-fact="Первая ракетка мира · титулы Большого шлема"
+            data-desc="Арина Соболенко — первая ракетка мира в одиночном разряде, многократная победительница турниров Большого шлема, включая US Open и Australian Open. Выросла в Минске; её подача и мощная игра с задней линии сделали её одной из самых узнаваемых спортсменок планеты."
+            aria-label="Арина Соболенко — подробнее">
+            <span class="bento__media"><img src="assets/people/sabalenka.jpg" alt="Арина Соболенко" loading="lazy" decoding="async"></span>
             <span class="bento__content">
               <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">теннис · Минск</span></span>
               <h3>Арина Соболенко <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
@@ -176,16 +139,14 @@
             </span>
           </article>
 
-          <!-- 05 · МАКС КОРЖ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="3"
-            data-video="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Макс Корж" data-photo="assets/people/korzh.jpg"
+            data-credit="Фото: Itokyl / Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Корж,_Макс"
             data-cat-label="Музыка · Поп"
-            data-desc="Макс Корж превратил стадионы в главные площадки страны. Его концерты — не просто шоу, а массовый опыт, где белорусская мелодика встречается с современным стадионным попом."
-            data-fact="Стадионные туры и главные хиты последнего десятилетия"
-            aria-label="Макс Корж — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&amp;q=70&amp;fit=crop" alt="Толпа на концерте — стадионный поп" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">МК</span>
+            data-sub="поп · Минск" data-fact="Стадионные туры и главные хиты последнего десятилетия"
+            data-desc="Макс Корж начинал с дворовых песен, а вырос в артиста, собирающего стадионы. «Горы по колено», «Малый повзрослел» и «Эндорфин» — гимны целого поколения, а его концерты стали главными массовыми событиями белорусской музыки."
+            aria-label="Макс Корж — подробнее">
+            <span class="bento__media"><img src="assets/people/korzh.jpg" alt="Макс Корж" loading="lazy" decoding="async"></span>
             <span class="bento__content">
               <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп · Минск</span></span>
               <h3>Макс Корж <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
@@ -193,118 +154,14 @@
             </span>
           </article>
 
-          <!-- 06 · ЛАЙФСТАЙЛ-ВЛОГИ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="4"
-            data-video="https://videos.pexels.com/video-files/3205624/3205624-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/3205624/3205624-hd_1920_1080_25fps.mp4"
-            data-cat-label="Блогеры · Сцена"
-            data-desc="Формат честных влогов о повседневности: учёба, работа, город, путешествия. Белорусская молодёжь снимает себя без пафоса — и это один из самых живых жанров новой культуры."
-            data-fact="Жанр, а не имя: сцена важнее списка"
-            aria-label="Лайфстайл-влоги — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&amp;q=70&amp;fit=crop" alt="Дорога и пейзаж — путешествие во влоге" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">сцена · Минск</span></span>
-              <h3>Лайфстайл-влоги <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Честные влоги о повседневности: личный дневник как живой формат культуры.</p>
-            </span>
-          </article>
-
-          <!-- 07 · TIKTOK-СКЕТЧИ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="tiktok" data-span="4"
-            data-video="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4"
-            data-cat-label="TikTok · Комедия"
-            data-desc="Короткие скетчи, которые рождаются в вертикальном формате: один телефон, одна идея и монтаж на ходу. Белорусский юмор всё чаще живёт именно здесь — и расходится по стране за часы."
-            data-fact="Вертикальный формат 9:16"
-            aria-label="TikTok-скетчи — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&amp;q=70&amp;fit=crop" alt="Смартфон с вертикальным видео — TikTok-формат" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">TikTok</span><span class="bento__follow">сцена · комедия</span></span>
-              <h3>TikTok-скетчи <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Один телефон, одна идея: юмор, который живёт в формате 9:16.</p>
-            </span>
-          </article>
-
-          <!-- 08 · IOWA -->
-          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
-            data-video="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
-            data-cat-label="Музыка · Поп-рок"
-            data-desc="IOWA — проект Екатерины Иванчиковой, которая родом из Могилёва. От локальных клубов до больших фестивалей: один из самых узнаваемых голосов белорусской сцены последних пятнадцати лет."
-            data-fact="Могилёв → большие фестивальные сцены"
-            aria-label="IOWA — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?w=900&amp;q=70&amp;fit=crop" alt="Певица с микрофоном на сцене" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">IOWA</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп-рок · Могилёв →</span></span>
-              <h3>IOWA <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Могилёвский старт и большие сцены: голос, который узнают по первым строкам.</p>
-            </span>
-          </article>
-
-          <!-- 09 · ЛЯВОН ВОЛЬСКИЙ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="5"
-            data-video="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/853889/853889-hd_1920_1080_25fps.mp4"
-            data-cat-label="Музыка · Рок"
-            data-desc="Лявон Вольский — фронтмен N.R.M. и одна из главных фигур белорусского рока. «Тры чарапахі» и «Маё пакаленьне» знают наизусть несколько поколений — редкий случай песни, ставшей общим языком."
-            data-fact="Фронтмен N.R.M."
-            aria-label="Лявон Вольский — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900&amp;q=70&amp;fit=crop" alt="Сцена и свет — рок-концерт" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">ЛВ</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">рок · Минск</span></span>
-              <h3>Лявон Вольский <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Голос N.R.M.: песни, которые стали общим языком нескольких поколений.</p>
-            </span>
-          </article>
-
-          <!-- 10 · ПОДКАСТЫ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="bloggers" data-span="3"
-            data-video="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
-            data-cat-label="Блогеры · Сцена"
-            data-desc="Разговорный жанр, который возвращает голосу доверие: интервью, истории и дискуссии о культуре. Подкасты — тихая, но важная часть современной белорусской медиасцены."
-            data-fact="Голос, тишина, разговор"
-            aria-label="Подкасты — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&amp;q=70&amp;fit=crop" alt="Пульт и микрофон — студия звука" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Блогеры</span><span class="bento__follow">сцена · аудио</span></span>
-              <h3>Подкасты <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Интервью и дискуссии о культуре: жанр, где важнее всего голос.</p>
-            </span>
-          </article>
-
-          <!-- 11 · ДАРЬЯ ДОМРАЧЕВА -->
-          <article class="bento__item" role="button" tabindex="0" data-category="sport" data-span="4"
-            data-video="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/1721294/1721294-hd_1920_1080_25fps.mp4"
-            data-cat-label="Спорт · Биатлон"
-            data-desc="Дарья Домрачева — четырёхкратная олимпийская чемпионка по биатлону. Один из самых сильных спортивных брендов Беларуси и пример дисциплины как культурной черты."
-            data-fact="4 олимпийских золота"
-            aria-label="Дарья Домрачева — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=900&amp;q=70&amp;fit=crop" alt="Спортивный зал — тренировка" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">ДД</span>
-            <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">биатлон · Минск</span></span>
-              <h3>Дарья Домрачева <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Четыре олимпийских золота: дисциплина как отдельная культурная ценность.</p>
-            </span>
-          </article>
-
-          <!-- 12 · ТИМА БЕЛОРУССКИХ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="music" data-span="4"
-            data-video="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/1580455/1580455-hd_1920_1080_30fps.mp4"
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Тима Белорусских" data-photo="assets/people/tima.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Тима_Белорусских"
             data-cat-label="Музыка · Инди-поп"
-            data-desc="Тима Белорусских — герой новой волны белорусского инди-попа: «Мокрый асфальт» и «Незабудка» сделали городскую романтику главным жанром молодёжи — а имя стало частью самого понятия «белорусское»."
-            data-fact="Новая волна белорусского инди-попа"
-            aria-label="Тима Белорусских — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=900&amp;q=70&amp;fit=crop" alt="Микрофон и сцена — инди-поп" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">ТБ</span>
+            data-sub="инди-поп · Минск" data-fact="«Мокрый асфальт» и «Незабудка» — хиты новой волны"
+            data-desc="Тима Белорусских — герой новой волны белорусского инди-попа. «Мокрый асфальт» и «Незабудка» превратили городскую романтику в главный жанр молодёжи, а сценическое имя артиста стало частью самого понятия «белорусское»."
+            aria-label="Тима Белорусских — подробнее">
+            <span class="bento__media"><img src="assets/people/tima.jpg" alt="Тима Белорусских" loading="lazy" decoding="async"></span>
             <span class="bento__content">
               <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">инди-поп · Минск</span></span>
               <h3>Тима Белорусских <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
@@ -312,71 +169,393 @@
             </span>
           </article>
 
-          <!-- 13 · ИЛЛЮСТРАЦИЯ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="art" data-span="4"
-            data-video="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/2887463/2887463-hd_1920_1080_25fps.mp4"
-            data-cat-label="Арт · Сцена"
-            data-desc="Белорусская иллюстрация переживает подъём: цифровой арт, плакаты, зины и книжная графика. Новое поколение художников говорит о городе и памяти современным визуальным языком."
-            data-fact="Цифровой арт · плакат · зины"
-            aria-label="Иллюстрация новой волны — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=900&amp;q=70&amp;fit=crop" alt="Художник за работой — иллюстрация" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="IOWA" data-photo="assets/people/iowa.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/IOWA_(группа)"
+            data-cat-label="Музыка · Поп-рок"
+            data-sub="поп-рок · Могилёв →" data-fact="Могилёв → большие фестивальные сцены"
+            data-desc="IOWA — проект Екатерины Иванчиковой, которая родом из Могилёва. «Мама» и «Улыбайся» сделали группу одной из самых ротируемых на постсоветском пространстве, а живые концерты — узнаваемым голосом белорусской сцены нулевых и десятых."
+            aria-label="IOWA — подробнее">
+            <span class="bento__media"><img src="assets/people/iowa.jpg" alt="IOWA" loading="lazy" decoding="async"></span>
             <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">сцена · иллюстрация</span></span>
-              <h3>Иллюстрация новой волны <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Плакаты, зины и книжная графика: визуальный язык нового поколения.</p>
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп-рок · Могилёв →</span></span>
+              <h3>IOWA <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Могилёвский старт и большие сцены: голос, который узнают по первым строкам.</p>
             </span>
           </article>
 
-          <!-- 14 · ГАЛЕРЕИ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="art" data-span="4"
-            data-video="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/4763824/4763824-hd_1920_1080_24fps.mp4"
-            data-cat-label="Арт · Сцена"
-            data-desc="Небольшие пространства и инициативы, где показывают современное искусство: перформанс, инсталляция, фотография. Именно здесь культура проверяет себя на смелость."
-            data-fact="Перформанс · инсталляция · фотография"
-            aria-label="Независимые галереи — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=900&amp;q=70&amp;fit=crop" alt="Пространство галереи — современное искусство" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Сергей Михалок" data-photo="assets/people/mikhalok.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Михалок,_Сергей_Владимирович"
+            data-cat-label="Музыка · Рок"
+            data-sub="рок · Минск" data-fact="«Ляпис Трубецкой» и Brutto"
+            data-desc="Сергей Михалок — один из основателей «Ляпис Трубецкой» и лидер Brutto. От ироничного ска-попа до жёсткого рока: его песни десятилетиями остаются языком городской молодёжи, а концерты — поводом говорить о серьёзном через смех."
+            aria-label="Сергей Михалок — подробнее">
+            <span class="bento__media"><img src="assets/people/mikhalok.jpg" alt="Сергей Михалок" loading="lazy" decoding="async"></span>
             <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">сцена · галереи</span></span>
-              <h3>Независимые галереи <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Места, где современное искусство проверяет себя на смелость.</p>
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">рок · Минск</span></span>
+              <h3>Сергей Михалок <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Ирония и рок: голос, который знают несколько поколений.</p>
             </span>
           </article>
 
-          <!-- 15 · ТАНЦЕВАЛЬНЫЙ TIKTOK -->
-          <article class="bento__item" role="button" tabindex="0" data-category="tiktok" data-span="5"
-            data-video="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4"
-            data-cat-label="TikTok · Танец"
-            data-desc="Танцевальные челленджи — новый фольклор: движения расходятся по стране за часы, а городские площадки и квартиры становятся сценой. Формат, в котором культура снова становится коллективной."
-            data-fact="Хореография как общий язык"
-            aria-label="Танцевальный TikTok — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&amp;q=70&amp;fit=crop" alt="Свет и толпа — движение и танец" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">◆</span>
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Лявон Вольский" data-photo="assets/people/volski.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Вольский,_Лявон"
+            data-cat-label="Музыка · Рок"
+            data-sub="рок · Минск" data-fact="Фронтмен N.R.M. · «Тры чарапахі»"
+            data-desc="Лявон Вольский — фронтмен N.R.M. и одна из главных фигур белорусского рока. «Тры чарапахі» и «Маё пакаленьне» знают наизусть несколько поколений: редкий случай, когда песня становится общим языком целой страны."
+            aria-label="Лявон Вольский — подробнее">
+            <span class="bento__media"><img src="assets/people/volski.jpg" alt="Лявон Вольский" loading="lazy" decoding="async"></span>
             <span class="bento__content">
-              <span class="bento__meta"><span class="bento__cat">TikTok</span><span class="bento__follow">сцена · танец</span></span>
-              <h3>Танцевальный TikTok <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Движения расходятся за часы: танец как новый фольклор.</p>
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">рок · Минск</span></span>
+              <h3>Лявон Вольский <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Голос N.R.M.: песни, которые стали общим языком нескольких поколений.</p>
             </span>
           </article>
 
-          <!-- 16 · ПВТ -->
-          <article class="bento__item" role="button" tabindex="0" data-category="it" data-span="7" data-size="wide"
-            data-video="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
-            data-preview="https://videos.pexels.com/video-files/3163534/3163534-hd_1920_1080_30fps.mp4"
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Владимир Мулявин" data-photo="assets/people/mulyavin.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Мулявин,_Владимир_Георгиевич"
+            data-cat-label="Музыка · Классика"
+            data-sub="фолк-рок · Минск" data-fact="Основатель «Песняров»"
+            data-desc="Владимир Мулявин создал ансамбль «Песняры» и превратил белорусскую народную песню в мировое явление. «Беловежская пуща» и «Алеся» — классика, которую страна поёт до сих пор."
+            aria-label="Владимир Мулявин — подробнее">
+            <span class="bento__media"><img src="assets/people/mulyavin.jpg" alt="Владимир Мулявин" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">фолк-рок · Минск</span></span>
+              <h3>Владимир Мулявин <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Народная песня на большой сцене: «Песняры» и их классика.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="music"
+            data-name="Александр Рыбак" data-photo="assets/people/rybak.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Рыбак,_Александр_Игоревич"
+            data-cat-label="Музыка · Евровидение"
+            data-sub="поп · Норвегия / Беларусь" data-fact="Победитель «Евровидения-2009»"
+            data-desc="Александр Рыбак родился в Минске и вырос в семье музыкантов. В 2009 году выиграл «Евровидение» с песней Fairytale, набрав один из самых высоких баллов в истории конкурса — и показал белорусскую мелодику на европейской сцене."
+            aria-label="Александр Рыбак — подробнее">
+            <span class="bento__media"><img src="assets/people/rybak.jpg" alt="Александр Рыбак" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Музыка</span><span class="bento__follow">поп · Норвегия / Беларусь</span></span>
+              <h3>Александр Рыбак <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Минское детство и европейская сцена: Fairytale и скрипка.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="sport"
+            data-name="Виктория Азаренко" data-photo="assets/people/azarenka.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY 2.0" data-wiki="https://ru.wikipedia.org/wiki/Азаренко,_Виктория_Фёдоровна"
+            data-cat-label="Спорт · Теннис"
+            data-sub="теннис · Минск" data-fact="Двукратная победительница Australian Open"
+            data-desc="Виктория Азаренко — двукратная победительница Australian Open и первая ракетка мира в 2012 году. Олимпийская чемпионка в миксте 2012-го; одна из самых узнаваемых белорусских спортсменок поколения."
+            aria-label="Виктория Азаренко — подробнее">
+            <span class="bento__media"><img src="assets/people/azarenka.jpg" alt="Виктория Азаренко" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">теннис · Минск</span></span>
+              <h3>Виктория Азаренко <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Первая ракетка мира и олимпийское золото: спорт как часть культурного кода.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="sport"
+            data-name="Дарья Домрачева" data-photo="assets/people/domracheva.jpg"
+            data-credit="Фото: Wikijunkie / Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Домрачева,_Дарья_Владимировна"
+            data-cat-label="Спорт · Биатлон"
+            data-sub="биатлон · Минск" data-fact="4 олимпийских золота"
+            data-desc="Дарья Домрачева — четырёхкратная олимпийская чемпионка по биатлону. Три золота Турина в 2014 году и эстафетное золото в 2018-м сделали её самым титулованным биатлонистом в истории страны."
+            aria-label="Дарья Домрачева — подробнее">
+            <span class="bento__media"><img src="assets/people/domracheva.jpg" alt="Дарья Домрачева" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">биатлон · Минск</span></span>
+              <h3>Дарья Домрачева <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Четыре олимпийских золота: дисциплина как культурная ценность.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="sport"
+            data-name="Ольга Корбут" data-photo="assets/people/korbut.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Корбут,_Ольга_Валентиновна"
+            data-cat-label="Спорт · Гимнастика"
+            data-sub="гимнастика · Гродно" data-fact="4 олимпийских золота · «петля Корбут»"
+            data-desc="Ольга Корбут выросла в Гродно и стала лицом мировой спортивной гимнастики 1970-х: четыре олимпийских золота Мюнхена-1972, петля Корбут и один из самых узнаваемых образов телевизионного спорта."
+            aria-label="Ольга Корбут — подробнее">
+            <span class="bento__media"><img src="assets/people/korbut.jpg" alt="Ольга Корбут" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">гимнастика · Гродно</span></span>
+              <h3>Ольга Корбут <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Гродно → мировая гимнастика: движение, которое знают по имени.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="sport"
+            data-name="Александр Глеб" data-photo="assets/people/hleb.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 2.0" data-wiki="https://ru.wikipedia.org/wiki/Глеб,_Александр_Павлович"
+            data-cat-label="Спорт · Футбол"
+            data-sub="футбол · Борисов" data-fact="«Арсенал», «Барселона», «Штутгарт»"
+            data-desc="Александр Глеб — лучший футболист Беларуси 2000-х, игравший за «Арсенал», «Барселону» и «Штутгарт». Его техника и видение поля сделали его символом поколения, а матчи сборной собирали страну у экранов."
+            aria-label="Александр Глеб — подробнее">
+            <span class="bento__media"><img src="assets/people/hleb.jpg" alt="Александр Глеб" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Спорт</span><span class="bento__follow">футбол · Борисов</span></span>
+              <h3>Александр Глеб <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Борисов → «Арсенал» и «Барселона»: техника как язык.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="literature" data-span="5"
+            data-name="Светлана Алексиевич" data-photo="assets/people/alexievich.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Алексиевич,_Светлана_Александровна"
+            data-cat-label="Литература · Нобель"
+            data-sub="документальная проза · Минск" data-fact="Нобелевская премия по литературе, 2015"
+            data-desc="Светлана Алексиевич — лауреат Нобелевской премии по литературе 2015 года. «У войны не женское лицо», «Чернобыльская молитва» и «Цинковые мальчики» построены на голосах людей — жанр, который она называет «романом голосов»."
+            aria-label="Светлана Алексиевич — подробнее">
+            <span class="bento__media"><img src="assets/people/alexievich.jpg" alt="Светлана Алексиевич" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Литература</span><span class="bento__follow">документальная проза · Минск</span></span>
+              <h3>Светлана Алексиевич <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Нобелевская премия 2015: книги, собранные из голосов людей.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="literature" data-span="3"
+            data-name="Василь Быков" data-photo="assets/people/bykov.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Быков,_Василь_Владимирович"
+            data-cat-label="Литература · XX век"
+            data-sub="проза · Витебщина" data-fact="«Сотников», «Обелиск», «Знак беды»"
+            data-desc="Василь Быков — один из главных писателей XX века о войне. Повести «Сотников», «Обелиск» и «Знак беды» переведены на десятки языков и рассказывают о выборе человека в бесчеловечных обстоятельствах."
+            aria-label="Василь Быков — подробнее">
+            <span class="bento__media"><img src="assets/people/bykov.jpg" alt="Василь Быков" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Литература</span><span class="bento__follow">проза · Витебщина</span></span>
+              <h3>Василь Быков <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Война без пафоса: выбор человека как главная тема.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="art"
+            data-name="Марк Шагал" data-photo="assets/people/chagall.jpg"
+            data-credit="Фото: Public domain / Wikimedia Commons" data-wiki="https://ru.wikipedia.org/wiki/Шагал,_Марк_Захарович"
+            data-cat-label="Арт · Авангард"
+            data-sub="живопись · Витебск" data-fact="Витебск → мировое искусство XX века"
+            data-desc="Марк Шагал родился в Витебске и стал одним из самых узнаваемых художников XX века. Летающие влюблённые, деревянные домики и скрипачи — его образный язык вырос из детства в Витебске и стал частью мировой культуры."
+            aria-label="Марк Шагал — подробнее">
+            <span class="bento__media"><img src="assets/people/chagall.jpg" alt="Марк Шагал" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">живопись · Витебск</span></span>
+              <h3>Марк Шагал <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Летающие влюблённые и витебские крыши: образный язык века.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="literature" data-span="3"
+            data-name="Владимир Короткевич" data-photo="assets/people/karatkevich.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Короткевич,_Владимир_Семёнович"
+            data-cat-label="Литература · Проза"
+            data-sub="проза · Орша" data-fact="«Дикая охота короля Стаха»"
+            data-desc="Владимир Короткевич — писатель, историк и один из создателей современной белорусской литературной мифологии. «Дикая охота короля Стаха» и «Колосья под серпом твоим» соединили историю, детектив и романтику."
+            aria-label="Владимир Короткевич — подробнее">
+            <span class="bento__media"><img src="assets/people/karatkevich.jpg" alt="Владимир Короткевич" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Литература</span><span class="bento__follow">проза · Орша</span></span>
+              <h3>Владимир Короткевич <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>История как детектив: белорусская готика Короткевича.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="science"
+            data-name="Жорес Алфёров" data-photo="assets/people/alferov.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Алфёров,_Жорес_Иванович"
+            data-cat-label="Наука · Нобель"
+            data-sub="физика · Витебск" data-fact="Нобелевская премия по физике, 2000"
+            data-desc="Жорес Алфёров родился в Витебске и получил Нобелевскую премию по физике 2000 года за работы по полупроводниковым гетероструктурам. Его открытия лежат в основе лазеров, светодиодов и современной оптоэлектроники."
+            aria-label="Жорес Алфёров — подробнее">
+            <span class="bento__media"><img src="assets/people/alferov.jpg" alt="Жорес Алфёров" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Наука</span><span class="bento__follow">физика · Витебск</span></span>
+              <h3>Жорес Алфёров <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Витебск → Нобель: гетероструктуры в основе лазеров и светодиодов.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places" data-span="7" data-size="wide"
+            data-name="Мирский замок" data-photo="assets/people/mir.jpg"
+            data-credit="Фото: Sergey Sebelev / Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Мирский_замок"
+            data-cat-label="Места · ЮНЕСКО"
+            data-sub="замок · Гродненская область" data-fact="Объект ЮНЕСКО с 2000 года"
+            data-desc="Мирский замок построен в начале XVI века и с 2000 года входит в список Всемирного наследия ЮНЕСКО. Сочетание готики и ренессанса, башни и дворцовые корпуса сделали его одним из главных символов Беларуси."
+            aria-label="Мирский замок — подробнее">
+            <span class="bento__media"><img src="assets/people/mir.jpg" alt="Мирский замок" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Места</span><span class="bento__follow">замок · Гродненская область</span></span>
+              <h3>Мирский замок <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Готика и ренессанс: главный замок страны и объект ЮНЕСКО.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places" data-span="5"
+            data-name="Несвижский замок" data-photo="assets/people/nesvizh.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Несвижский_замок"
+            data-cat-label="Места · ЮНЕСКО"
+            data-sub="дворец · Минская область" data-fact="Объект ЮНЕСКО с 2005 года"
+            data-desc="Несвижский замок — резиденция рода Радзивиллов и объект ЮНЕСКО с 2005 года. Дворцовый ансамбль, парки и костёл Божьего Тела хранят историю одной из самых влиятельных семей Великого княжества Литовского."
+            aria-label="Несвижский замок — подробнее">
+            <span class="bento__media"><img src="assets/people/nesvizh.jpg" alt="Несвижский замок" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Места</span><span class="bento__follow">дворец · Минская область</span></span>
+              <h3>Несвижский замок <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Резиденция Радзивиллов: дворцы, парки и история ВКЛ.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places"
+            data-name="Беловежская пуща" data-photo="assets/people/pushcha.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0" data-wiki="https://ru.wikipedia.org/wiki/Беловежская_пуща"
+            data-cat-label="Природа · ЮНЕСКО"
+            data-sub="заповедник · Брестская область" data-fact="Объект ЮНЕСКО · зубры"
+            data-desc="Беловежская пуща — один из последних древних лесов Европы и объект Всемирного наследия ЮНЕСКО. Здесь живёт крупнейшая популяция зубров, а сам лес помнит времена, когда Европу покрывали первобытные чащи."
+            aria-label="Беловежская пуща — подробнее">
+            <span class="bento__media"><img src="assets/people/pushcha.jpg" alt="Беловежская пуща" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Природа</span><span class="bento__follow">заповедник · Брестская область</span></span>
+              <h3>Беловежская пуща <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Древний лес Европы: зубры и чащи, которые помнят всё.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places"
+            data-name="Национальная библиотека" data-photo="assets/people/nlb.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Национальная_библиотека_Беларуси"
+            data-cat-label="Места · Минск"
+            data-sub="архитектура · Минск" data-fact="«Ромбокуб» · более 10 млн изданий"
+            data-desc="Национальная библиотека Беларуси открылась в 2006 году в здании-«ромбокубе» — одном из самых узнаваемых архитектурных образов Минска. Форма отсылает к ромбу белорусского орнамента, а фонд превышает десять миллионов изданий."
+            aria-label="Национальная библиотека — подробнее">
+            <span class="bento__media"><img src="assets/people/nlb.jpg" alt="Национальная библиотека" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Места</span><span class="bento__follow">архитектура · Минск</span></span>
+              <h3>Национальная библиотека <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Здание-ромб: архитектура, которая цитирует орнамент.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places"
+            data-name="Озеро Нарочь" data-photo="assets/people/naroch.jpg"
+            data-credit="Фото: Zedlik / Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Нарочь_(озеро)"
+            data-cat-label="Природа · Озёра"
+            data-sub="озеро · Минская область" data-fact="Крупнейшее озеро страны · ≈ 80 км²"
+            data-desc="Нарочь — самое большое озеро Беларуси: около 80 квадратных километров воды среди сосновых лесов. Летом сюда приезжают на «медленные» каникулы, а зимой — за тишиной и подлёдной рыбалкой."
+            aria-label="Озеро Нарочь — подробнее">
+            <span class="bento__media"><img src="assets/people/naroch.jpg" alt="Озеро Нарочь" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Природа</span><span class="bento__follow">озеро · Минская область</span></span>
+              <h3>Озеро Нарочь <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Самое большое озеро страны: тишина, сосны и вода.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="places"
+            data-name="Минск" data-photo="assets/people/minsk.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Минск"
+            data-cat-label="Город · Минск"
+            data-sub="город · столица" data-fact="Столица · около 2 млн жителей"
+            data-desc="Минск — столица Беларуси и город, в котором сходятся все нити проекта: проспекты и дворы, библиотека-ромб, IT-офисы и бары, где играет пост-панк. Город, который постоянно перестраивается, но узнаётся по ритму."
+            aria-label="Минск — подробнее">
+            <span class="bento__media"><img src="assets/people/minsk.jpg" alt="Минск" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Город</span><span class="bento__follow">город · столица</span></span>
+              <h3>Минск <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Город, где сходятся история, музыка и код.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="science"
+            data-name="БГУ" data-photo="assets/people/bsu.jpg"
+            data-credit="Фото: Zelyoniy.anton / Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Белорусский_государственный_университет"
+            data-cat-label="Наука · БГУ"
+            data-sub="университет · Минск" data-fact="Основан в 1921 году"
+            data-desc="Белорусский государственный университет основан в 1921 году и остаётся главным университетом страны. На его факультетах — от радиофизики и компьютерных технологий до филологии — выросло не одно поколение исследователей."
+            aria-label="БГУ — подробнее">
+            <span class="bento__media"><img src="assets/people/bsu.jpg" alt="БГУ" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Наука</span><span class="bento__follow">университет · Минск</span></span>
+              <h3>БГУ <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Главный университет страны — и место, где сделан этот проект.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="creators"
+            data-name="Wargaming" data-photo="assets/people/minsk.jpg"
+            data-credit="Фото: Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Wargaming.net"
+            data-cat-label="IT · Геймдев"
+            data-sub="геймдев · Минск" data-fact="Основана в Минске в 1998 · World of Tanks — 2010"
+            data-desc="Wargaming основана в Минске в 1998 году. World of Tanks вышла в 2010-м и стала мировым хитом: из минского офиса выросла компания с десятками миллионов игроков, а геймдев — в одну из самых экспортных отраслей страны."
+            aria-label="Wargaming — подробнее">
+            <span class="bento__media"><img src="assets/people/minsk.jpg" alt="Wargaming" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">IT</span><span class="bento__follow">геймдев · Минск</span></span>
+              <h3>Wargaming <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Минская студия, чья игра стала мировым хитом.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="creators"
+            data-name="Парк высоких технологий" data-photo="assets/people/bsu.jpg"
+            data-credit="Фото: Zelyoniy.anton / Wikimedia Commons, CC BY-SA 3.0" data-wiki="https://ru.wikipedia.org/wiki/Парк_высоких_технологий_(Беларусь)"
             data-cat-label="IT · Экосистема"
-            data-desc="Парк высоких технологий, основанный в 2005 году: особый правовой режим и центр IT-экосистемы, из которой вышли десятки продуктовых команд и студий."
-            data-fact="Основан в 2005 году"
-            aria-label="Парк высоких технологий — открыть видео">
-            <span class="bento__media"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&amp;q=70&amp;fit=crop" alt="Код на экране — экосистема разработки" loading="lazy"></span>
-            <span class="bento__initials" aria-hidden="true">ПВТ</span>
+            data-sub="экосистема · Минск" data-fact="Основан в 2005 году"
+            data-desc="Парк высоких технологий основан в 2005 году как особый правовой режим для IT-компаний. Из него выросли десятки продуктовых команд и студий; ПВТ стал центром экосистемы, в которой дизайн, код и музыка живут рядом."
+            aria-label="Парк высоких технологий — подробнее">
+            <span class="bento__media"><img src="assets/people/bsu.jpg" alt="Парк высоких технологий" loading="lazy" decoding="async"></span>
             <span class="bento__content">
               <span class="bento__meta"><span class="bento__cat">IT</span><span class="bento__follow">экосистема · Минск</span></span>
               <h3>Парк высоких технологий <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
-              <p>Особый правовой режим и центр экосистемы, из которой выросли десятки команд.</p>
+              <p>Особый режим и центр экосистемы, из которой выросли десятки команд.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="art"
+            data-name="Белорусское кино" data-photo="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900&amp;q=70&amp;fit=crop"
+            data-credit="Фото: Unsplash" data-wiki="https://ru.wikipedia.org/wiki/Кинематограф_Беларуси"
+            data-cat-label="Арт · Кино"
+            data-sub="кино · Минск" data-fact="«Беларусьфильм» и новая документалистика"
+            data-desc="«Беларусьфильм» и независимые студии: от военных драм и детского кино до документалистики и фестивалей. Кино остаётся одной из самых живых форм разговора о стране — и всё чаще снимается молодыми авторами."
+            aria-label="Белорусское кино — подробнее">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900&amp;q=70&amp;fit=crop" alt="Белорусское кино" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">кино · Минск</span></span>
+              <h3>Белорусское кино <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>От студийных драм до независимой документалистики.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="art"
+            data-name="Театр и опера" data-photo="https://images.unsplash.com/photo-1503095396549-807759245b35?w=900&amp;q=70&amp;fit=crop"
+            data-credit="Фото: Unsplash" data-wiki="https://ru.wikipedia.org/wiki/Национальный_академический_Большой_театр_оперы_и_балета_Республики_Беларусь"
+            data-cat-label="Арт · Театр"
+            data-sub="театр · Минск" data-fact="Большой театр · Купаловский · независимые площадки"
+            data-desc="Большой театр оперы и балета, Купаловский театр и десятки независимых площадок. Сцена остаётся местом, где белорусское слово и музыка встречаются лицом к лицу со зрителем — без экрана и алгоритмов."
+            aria-label="Театр и опера — подробнее">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=900&amp;q=70&amp;fit=crop" alt="Театр и опера" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">театр · Минск</span></span>
+              <h3>Театр и опера <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Сцена, где слово и музыка встречаются со зрителем.</p>
+            </span>
+          </article>
+
+          <article class="bento__item" role="button" tabindex="0" data-category="art"
+            data-name="Стрит-арт и музыка" data-photo="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&amp;q=70&amp;fit=crop"
+            data-credit="Фото: Unsplash" data-wiki="https://ru.wikipedia.org/wiki/Белорусская_музыка"
+            data-cat-label="Арт · Улица"
+            data-sub="улица · Минск" data-fact="Дворы, цеха и независимые фестивали"
+            data-desc="Дворы, заброшенные цеха и стены гаражей: уличная культура Минска и других городов всё чаще становится площадкой для выставок, концертов и фестивалей. Это та же привычка делать сообща, что и в традиционной вышивке."
+            aria-label="Стрит-арт и музыка — подробнее">
+            <span class="bento__media"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&amp;q=70&amp;fit=crop" alt="Стрит-арт и музыка" loading="lazy" decoding="async"></span>
+            <span class="bento__content">
+              <span class="bento__meta"><span class="bento__cat">Арт</span><span class="bento__follow">улица · Минск</span></span>
+              <h3>Стрит-арт и музыка <span class="play" aria-hidden="true"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 1l8 5-8 5z"/></svg></span></h3>
+              <p>Стены и дворы как новая площадка культуры.</p>
             </span>
           </article>
         </div>
@@ -384,9 +563,9 @@
         <div class="bento-empty">В этой категории пока никого нет — но нить только пишется. Загляните позже или предложите героя сами.</div>
 
         <div class="now-note">
-          <span>▣ Наведите на карточку — <b>предпросмотр видео</b></span>
-          <span>▣ Клик или Enter — <b>ролик в модальном окне</b></span>
-          <span>▣ Категорий: <b>6</b> · карточек: <b>16</b></span>
+          <span>▣ Наведите — <b>подсказка</b>, клик — <b>карточка человека</b></span>
+          <span>▣ Источник фото: <b>Wikimedia Commons</b></span>
+          <span>▣ Категорий: <b>7</b> · карточек: <b>30</b></span>
         </div>
       </div>
     </section>
@@ -430,7 +609,7 @@
 
         <div class="next-cta" style="border-top-color:rgba(243,236,221,.14);margin-top:clamp(2.4rem,5vw,4rem);">
           <h3 style="color:var(--cream);">Хотите, чтобы герой появился здесь? <em>Расскажите нам</em></h3>
-          <a class="btn btn--ghost" href="mailto:hello@culture-code.by">Предложить героя <span class="btn__arrow">→</span></a>
+          <a class="btn btn--ghost" href="https://t.me/CTCE100" target="_blank" rel="noopener noreferrer">Предложить героя <span class="btn__arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -440,9 +619,11 @@
   <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal__scrim" data-close></div>
     <div class="modal__dialog">
-      <div class="modal__video">
-        <video controls playsinline preload="none" aria-label="Видео героя"></video>
-        <div class="video-fallback">Видеофрагмент скоро появится</div>
+      <div class="modal__video modal__portrait js-media">
+        <img src="" alt="" class="js-media-img">
+        <iframe class="modal__frame js-frame" src="" title="Видео" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen hidden></iframe>
+        <div class="video-fallback" hidden>Изображение недоступно</div>
+        <figcaption class="js-credit"></figcaption>
         <div class="modal__nav">
           <button class="modal__arrow" type="button" data-prev aria-label="Предыдущая карточка">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"/></svg>
@@ -455,11 +636,15 @@
       <div class="modal__info">
         <span class="modal__cat js-modal-cat"></span>
         <h3 class="modal__title" id="modalTitle"><span class="js-modal-title"></span></h3>
+        <span class="modal__sub js-modal-sub"></span>
         <p class="modal__desc js-modal-desc"></p>
         <div class="modal__fact">
           <span>Коротко о главном</span>
           <b class="js-modal-fact"></b>
         </div>
+        <a class="modal__wiki js-modal-wiki" href="#" target="_blank" rel="noopener noreferrer">
+          Статья в Википедии <span aria-hidden="true">↗</span>
+        </a>
       </div>
       <button class="modal__close" type="button" data-close aria-label="Закрыть модальное окно">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -474,6 +659,11 @@
         <div>
           <h2 class="footer__title">Код пишется <em>прямо сейчас.</em></h2>
           <p style="color:rgba(243,236,221,.6);max-width:40ch;">Культурный код РБ — медиапроект о культуре Беларуси на стыке истории и современности.</p>
+          <div class="footer__contacts">
+            <a href="https://t.me/CTCE100" target="_blank" rel="noopener noreferrer">Telegram · @CTCE100</a>
+            <a href="/cdn-cgi/l/email-protection#593c34383035193c21383429353c773b20">Почта · <span class="__cf_email__" data-cfemail="dbbeb6bab2b79bbea3bab6abb7bef5b9a2">[email&#160;protected]</span></a>
+            <span style="color:rgba(243,236,221,.45);">Автор: Музыка Станислав · ФРФиКТ БГУ</span>
+          </div>
         </div>
         <div class="footer__cols">
           <div class="footer__col">
@@ -504,6 +694,6 @@
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
   </button>
 
-  <script src="js/main.js" defer></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js" defer></script>
 </body>
 </html>
